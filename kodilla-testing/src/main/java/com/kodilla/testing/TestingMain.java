@@ -5,10 +5,12 @@ public class TestingMain {
         Calculator test = new Calculator(3, 5);
         int resultOdd = test.getOdd();
         int resultSum = test.getSum();
-        if ( resultOdd == -2 & resultSum == 8 ) {
+        int a = test.getA();
+        int b = test.getB();
+        if (resultOdd == a - b & resultSum == a + b) {
         System.out.println("test is ok.");
      } else { System.out.println("test is wrong.");
     }
-        System.out.println("3 - 5 = " + resultOdd+",  "+"3+5 = " + resultSum );
+        System.out.println("3 - 5 = " + resultOdd+",  "   + " 3 + 5 = " + resultSum );
     }
 }
