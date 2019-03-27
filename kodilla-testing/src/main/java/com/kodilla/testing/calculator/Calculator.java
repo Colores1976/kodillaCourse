@@ -11,9 +11,9 @@ public class Calculator {
         int sum = a + b;
         return sum;
     }
-    public int getOdd(){
-        int odd = a - b;
-        return odd;
+    public int getDifference(){
+        int difference = a - b;
+        return difference;
     }
     public int getA() {
         return a;
