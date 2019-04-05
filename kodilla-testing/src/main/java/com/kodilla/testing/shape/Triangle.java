@@ -12,7 +12,7 @@ public class Triangle implements Shape {
         return triangle;
     }
     // a- podstawa, h - wysokość
-    public double getField(double a, double h) {
+    public double getField() {
         double field = (a*h)/2;
         return field;
     }

@@ -15,8 +15,6 @@ public class ShapeCollectorTestSuite {
       ArrayList<Shape> collection = new ArrayList<>();
       Shape square1 = new Square(2.0,2.0);
       Shape triangle = new Triangle(5, 5);
-      Shape circle = new Circle(5.0);
-      Shape square2 = new Square(5,7);
 
       ArrayList<Shape> expected = new ArrayList<>();
       expected.add(square1);
@@ -73,14 +71,15 @@ public class ShapeCollectorTestSuite {
     public void testShowFigures(){
         //Given
         ShapeCollector shapeCollector = new ShapeCollector();
-        Shape square1 = new Square(2,2);
+        Shape circle = new Circle(5);
 
         ArrayList<Shape> collection = new ArrayList<>();
-        collection.add(square1);
+        collection.add(circle);
 
         //When
-       String result = shapeCollector.showFigures();
+       shapeCollector.showFigures();
+
         //Then
-        Assert.assertEquals( "square1", result);
+
     }
 }

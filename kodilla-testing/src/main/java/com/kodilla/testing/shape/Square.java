@@ -15,7 +15,7 @@ class Square implements Shape {
         return name;
     }
 @Override
-    public double getField(double a, double b) {
+    public double getField() {
         field = a*b;
         return field;
     }
