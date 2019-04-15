@@ -1,9 +1,9 @@
 package com.kodilla.testing.shape;
-import com.kodilla.testing.shape.ShapeCollector;
-import org.junit.*;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.Collection;
+
 
 public class ShapeCollectorTestSuite {
 
@@ -77,8 +77,8 @@ public class ShapeCollectorTestSuite {
         collection.add(circle);
 
         //When
-       shapeCollector.showFigures();
-
+       System.out.println(shapeCollector.showFigures());
+       System.out.println( collection.toString());
         //Then
 
     }

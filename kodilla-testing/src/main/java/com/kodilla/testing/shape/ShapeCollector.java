@@ -1,5 +1,4 @@
 package com.kodilla.testing.shape;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class ShapeCollector {
@@ -15,15 +14,13 @@ public class ShapeCollector {
     }
 
     public Shape getFigure( int n ) {
-        if (n < 0 || n >= collection.size()) {
-            return null;
-        } else {
-            return collection.get(n);
-        }
+
+           Shape result = collection.get(n);
+        return result;
     }
 
     public String showFigures() {
-        for (int k = 0; k <= collection.size(); k++) ;
+        for (int k = 0; k < collection.size(); k++) ;
         String result = collection.toString();
         return result;
     }
